@@ -1,7 +1,3 @@
-export default function HomeScreen() {
-  return (
-    <main>
-      <h1>Home</h1>
-    </main>
-  );
-}
+import { HomeScreen } from "../src/screens/HomeScreen";
+
+export default HomeScreen;

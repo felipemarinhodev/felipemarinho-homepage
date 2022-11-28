@@ -1,0 +1,24 @@
+{
+  "name": "@felipemarinho/test-commons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "base.ts"
+  ],
+  "scripts": {
+    "lint": "echo 'Not necessary'",
+    "test": "echo 'Not necessary'"
+  },
+  "devDependencies": {
+    "jest": "27.0.0",
+    "jest-styled-components": "7.0.8",
+    "ts-node": "10.7.0",
+    "babel-jest": "28.0.3",
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
+    "@babel/preset-react": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
+    "@testing-library/react": "13.2.0"
+  }
+}

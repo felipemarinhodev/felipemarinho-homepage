@@ -1,0 +1,15 @@
+{
+  "name": "@felipemarinho/utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint './**/*.{ts,tsx}'"
+  },
+  "devDependencies": {
+    "@felipemarinho/test-commons" : "*",
+    "@felipemarinho/tsconfig-commons" : "*",
+    "@felipemarinho/eslint-commons" : "*"
+  }
+}
