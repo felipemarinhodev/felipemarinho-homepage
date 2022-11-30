@@ -27,11 +27,24 @@ const wrapperModifiers = {
       background: ${lighten(0.1, "#DCDCDC")};
     }
   `,
+  small: () => css`
+    height: 2rem;
+    font-size: 1rem;
+  `,
+  medium: () => css`
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 0.6rem 2.8rem;
+  `,
+  large: () => css`
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 0.6rem 3.6rem;
+  `,
 };
 
 export const Button = styled.button<ButtonProps>`
-  ${({ variant }) => css`
-    padding: 0.5rem 1rem;
+  ${({ variant, size }) => css`
     border-radius: 0.5rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -39,5 +52,6 @@ export const Button = styled.button<ButtonProps>`
     cursor: pointer;
 
     ${!!variant && wrapperModifiers[variant]}
+    ${!!size && wrapperModifiers[size]}
   `}
 `;

@@ -15,4 +15,5 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   variant: "contained",
+  size: "medium",
 };
