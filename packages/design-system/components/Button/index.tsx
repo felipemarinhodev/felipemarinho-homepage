@@ -1,5 +1,11 @@
-import styled from "styled-components";
+import React, { ButtonHTMLAttributes } from "react";
+import * as S from "./style";
 
-const Button = styled.button`
-  color: red;
-`;
+export type ButtonProps = {
+  children: React.ReactNode;
+  variant: "contained" | "outlined" | "text";
+} & ButtonHTMLAttributes<HTMLButtonElement>;
+
+export const Button = ({ children, variant = "contained" }: ButtonProps) => (
+  <S.Button variant={variant}>{children}</S.Button>
+);
